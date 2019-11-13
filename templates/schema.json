@@ -1,0 +1,15 @@
+{
+    "target": ["class", "sql"],
+    "entities":
+    [
+        {
+            "name": "person",
+            "fields": [
+                {"name": "firstName", "type": "string", "length": "64", "nullable": "true"},
+                {"name": "lastName", "type": "string", "nullable": "false"},
+                {"name": "father", "type": "person", "nullable": "true"},
+                {"name": "mother", "type": "person", "nullable": "true"}
+            ]
+        }
+    ]
+}
